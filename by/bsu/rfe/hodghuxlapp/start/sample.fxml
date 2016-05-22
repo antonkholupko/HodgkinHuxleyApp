@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsu.rfe.hodghuxlapp.view.Controller">
+   <items>
+      <GridPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="152.0" SplitPane.resizableWithParent="false">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnStart" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#btnStartOnClick" onMouseClicked="#btnStartOnClick" prefHeight="39.0" prefWidth="125.0" text="Start">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="14.0" layoutY="29.0" text="gNa:" />
+                  <TextField fx:id="gNa" layoutX="61.0" layoutY="25.0" prefHeight="25.0" prefWidth="74.0" text="120.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <TextField fx:id="Cm" layoutX="61.0" layoutY="25.0" prefHeight="25.0" prefWidth="74.0" text="1.0" />
+                  <Label layoutX="14.0" layoutY="31.0" text="Cm:" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <TextField fx:id="gK" layoutX="61.0" layoutY="25.0" prefHeight="25.0" prefWidth="74.0" text="36.0" />
+                  <Label layoutX="14.0" layoutY="29.0" text="gK:" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Label layoutX="14.0" layoutY="29.0" text="gL:" />
+                  <TextField fx:id="gL" layoutX="61.0" layoutY="25.0" prefHeight="25.0" prefWidth="74.0" text="0.3" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+               <children>
+                  <TextField fx:id="ENa" layoutX="61.0" layoutY="25.0" prefHeight="25.0" prefWidth="74.0" text="50.0" />
+                  <Label layoutX="14.0" layoutY="29.0" text="ENa:" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+               <children>
+                  <Label layoutX="14.0" layoutY="29.0" text="EK:" />
+                  <TextField fx:id="EK" layoutX="61.0" layoutY="25.0" prefHeight="25.0" prefWidth="74.0" text="-77.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7">
+               <children>
+                  <Label layoutX="14.0" layoutY="29.0" text="EL:" />
+                  <TextField fx:id="EL" layoutX="61.0" layoutY="25.0" prefHeight="25.0" prefWidth="74.0" text="-54.5" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <GridPane fx:id="grid">
+         <children>
+            <Pane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <Pane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </items>
+</SplitPane>
